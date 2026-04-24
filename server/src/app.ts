@@ -25,8 +25,19 @@ app.use((req, res, next) => {
 
 app.post('/bfhl', handleBFHL);
 
-app.get('/health', (_, res) => {
-  res.json({ status: 'ok' });
+app.get('/health', cors(), (_, res) => {
+  res.status(200).json({ 
+    status: 'ok', 
+    timestamp: new Date().toISOString(),
+    message: 'Server is healthy' 
+  });
+});
+
+app.get('/', cors(), (_, res) => {
+  res.status(200).json({ 
+    message: 'SRM Full Stack Engineering Challenge API',
+    health_check: '/health'
+  });
 });
 
 app.listen(PORT, () => {
