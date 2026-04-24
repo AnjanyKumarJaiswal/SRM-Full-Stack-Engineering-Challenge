@@ -1,0 +1,100 @@
+.container {
+  background: var(--panel-bg);
+  border: 1px solid var(--border-color);
+  padding: 2.5rem;
+}
+
+.header {
+  margin-bottom: 2.5rem;
+}
+
+.title {
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+  margin-bottom: 0.8rem;
+}
+
+.line {
+  width: 40px;
+  height: 2px;
+  background: var(--accent-color);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.statCard {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1.5rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.statLabel {
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+  letter-spacing: 2px;
+  margin-bottom: 0.8rem;
+}
+
+.statValue {
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--accent-color);
+}
+
+.issues {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.issueHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.count {
+  color: #ff5f56;
+}
+
+.issueList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.issueItem {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.85rem;
+  color: #ff5f56;
+  background: rgba(255, 95, 86, 0.05);
+  padding: 0.4rem 0.8rem;
+}
+
+.empty {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+  .issues {
+    grid-template-columns: 1fr;
+  }
+}
