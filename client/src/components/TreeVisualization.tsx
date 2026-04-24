@@ -15,7 +15,6 @@ const RenderNode: React.FC<{ node: TreeNode | string; label: string; isRoot?: bo
     );
   }
 
-  const keys = Object.keys(node);
   const content = node[label] || node;
 
   return (
