@@ -1,16 +1,17 @@
 .toast {
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  background: #1a1a1a;
-  border: 1px solid #ff5f56;
-  padding: 1rem 1.5rem;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  background: white;
+  border-left: 5px solid #ff5f56;
+  padding: 1.2rem 2rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  animation: slideIn 0.3s ease;
+  gap: 1.5rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   z-index: 1000;
+  border-radius: 4px;
 }
 
 @keyframes slideIn {
@@ -19,34 +20,36 @@
 }
 
 .icon {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   background: #ff5f56;
   color: white;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
-  font-size: 0.8rem;
+  font-weight: 900;
+  font-size: 0.9rem;
 }
 
 .message {
-  font-size: 0.9rem;
-  color: var(--text-primary);
+  font-size: 0.95rem;
+  color: #111;
   font-family: var(--font-main);
-  letter-spacing: 1px;
+  letter-spacing: -0.01em;
+  font-weight: 700;
 }
 
 .close {
   background: transparent;
   border: none;
-  color: var(--text-secondary);
-  font-size: 1.2rem;
+  color: #ccc;
+  font-size: 1.5rem;
   cursor: pointer;
   padding: 0 0.5rem;
+  transition: color 0.3s ease;
 }
 
 .close:hover {
-  color: white;
+  color: #000;
 }

@@ -1,4 +1,11 @@
 @font-face {
+  font-family: 'Instrument Serif';
+  src: url('/fonts/InstrumentSerif-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Manrope';
   src: url('/fonts/Manrope-Medium.ttf') format('truetype');
   font-weight: 500;
@@ -6,13 +13,14 @@
 }
 
 :root {
-  --bg-color: #050505;
-  --accent-color: #f46b45;
-  --accent-gradient: linear-gradient(135deg, #f46b45 0%, #eea849 100%);
-  --text-primary: #ffffff;
-  --text-secondary: #a0a0a0;
-  --panel-bg: rgba(20, 20, 20, 0.8);
-  --border-color: rgba(255, 255, 255, 0.1);
+  --bg-color: #F5F5DC; /* Beige */
+  --accent-peach: #FFDAB9;
+  --accent-lime: #32CD32;
+  --accent-gradient: linear-gradient(135deg, #FFDAB9 0%, #32CD32 100%);
+  --text-primary: #111111;
+  --text-secondary: #555555;
+  --panel-bg: rgba(255, 255, 255, 0.9);
+  --border-color: rgba(0, 0, 0, 0.1);
   --font-main: 'Manrope', system-ui, -apple-system, sans-serif;
 }
 
@@ -39,7 +47,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px);
   background-size: 30px 30px;
   z-index: -1;
   pointer-events: none;
@@ -57,5 +65,5 @@ input, textarea {
 
 h1, h2, h3, h4 {
   letter-spacing: -0.02em;
-  font-weight: 600;
+  font-weight: 700;
 }

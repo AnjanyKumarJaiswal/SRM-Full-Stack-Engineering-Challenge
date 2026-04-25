@@ -26,10 +26,6 @@ function App() {
     <div className="app">
       <header className="header">
         <div className="logo">TREEGUARD HIERARCHY</div>
-        <div className="operator-identity">
-          <span className="op-label">OPERATOR:</span>
-          <span className="op-value">Anjany | RA2311026010006</span>
-        </div>
       </header>
 
       <div className="container">
